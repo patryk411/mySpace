@@ -1,0 +1,13 @@
+footer {
+	color: black;
+	background-color: #fff;
+
+	.footer-box {
+		.footer-text {
+			color: $about;
+			text-align: center;
+			font-size: 2em;
+			font-weight: bold;
+		}
+	}
+}

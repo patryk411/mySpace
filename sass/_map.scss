@@ -1,0 +1,41 @@
+.map-img {
+	height: 100vh;
+	background-image: url('/img/niebowe1920.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	.map-header {
+		font-size: 4em;
+		text-align: center;
+		padding: 100px 0 50px 0;
+	}
+
+	.content-box {
+		display: flex;
+		flex-direction: column;
+
+		.map-text {
+			margin-bottom: 50px;
+			font-size: 2.2em;
+			text-align: center;
+		}
+
+		.box-map {
+			i {
+				font-size: 3em;
+				margin: 90px 0 20px 0;
+			}
+
+			.box-header {
+				font-size: 2.2em;
+			}
+
+			.box-text {
+				padding: 10px;
+				font-size: 1.4em;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+		}
+	}
+}

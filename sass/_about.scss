@@ -1,0 +1,52 @@
+.about-me {
+	background-color: #fff;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	h3 {
+		text-align: center;
+		margin: 70px auto;
+		color: $about;
+	}
+
+	.card {
+		display: flex;
+		align-items: start;
+		justify-content: center;
+		width: 600px;
+		margin: 25px 0;
+
+		img {
+			background-position: 0 50%;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+		}
+
+		.card-body {
+			color: rgb(29, 26, 26);
+
+			.card-title {
+				font-size: 2.2em;
+				padding: 10px 0;
+				font-family: $pop;
+			}
+
+			.card-text {
+				padding: 10px 0;
+				font-size: 1.5em;
+			}
+
+			.btn {
+				border-radius: 4px;
+				color: #fff;
+				font-size: 1.5em;
+				background-color: $bgsection;
+			}
+		}
+	}
+}

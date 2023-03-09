@@ -1,0 +1,24 @@
+nav {
+	font-weight: bold;
+	font-size: 2em;
+
+	.navbar-brand {
+		color: #fff;
+		font-size: 1em;
+		margin-left: 15px;
+
+		i {
+			font-size: 1.5em;
+		}
+	}
+
+	.nav-link {
+		color: #fff;
+		margin: 0 15px;
+		transition: color 0.5s;
+	}
+
+	.nav-link:hover {
+		color: rgba(255, 255, 255, 0.3);
+	}
+}
