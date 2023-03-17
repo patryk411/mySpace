@@ -40,6 +40,7 @@ body {
 @import './footer';
 @import './about-page';
 @import './galery';
+@import './contact';
 
 @media (min-width: 992px) {
 	.map-img {
@@ -62,8 +63,8 @@ body {
 
 	.galery-section {
 		margin: 150px 0 30px;
-	
-		.galery-box {    
+
+		.galery-box {
 			display: flex;
 			flex-direction: row;
 			align-items: start;
@@ -71,7 +72,7 @@ body {
 			padding: 100px 20px;
 			box-shadow: 20px 20px 51px -10px rgba(66, 68, 90, 1);
 			margin: 150px 0;
-			
+
 			img {
 				background-position: center;
 				background-size: cover;
@@ -199,14 +200,14 @@ body {
 
 	.galery-section {
 		margin: 80px 0 20px;
-	
-		.galery-box {    
+
+		.galery-box {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			// align-items: center;
 			margin: 80px 0;
-			
+
 			img {
 				background-position: center;
 				background-size: cover;
@@ -214,13 +215,12 @@ body {
 			}
 
 			.text {
-
 				.box-heading {
 					margin: 15px 0 10px;
 					font-size: 2.8em;
 					font-weight: bold;
 				}
-		
+
 				.box-text {
 					font-size: 2.5em;
 				}
@@ -230,7 +230,7 @@ body {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			margin: 80px 0
+			margin: 80px 0;
 		}
 	}
 }
@@ -246,14 +246,14 @@ body {
 
 	.galery-section {
 		margin: 80px 0 20px;
-	
-		.galery-box {    
+
+		.galery-box {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			margin: 100px 0;
-			
+
 			img {
 				background-position: center;
 				background-size: cover;
@@ -264,13 +264,13 @@ body {
 				display: flex;
 				flex-direction: column;
 				align-items: start;
-				
+
 				.box-heading {
 					margin: 20px 0 10px;
 					font-size: 2.6em;
 					font-weight: bold;
 				}
-		
+
 				.box-text {
 					font-size: 2.2em;
 				}
@@ -278,32 +278,31 @@ body {
 		}
 	}
 
-	
-.galery-main {
-    color: $about;
-    .galery-content {
-        .galery-heading {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			justify-content: center;
-            font-size: 4em;
-            font-weight: bold;
-            font-family: $mont;
-            text-align: center;
-            margin: 180px 0 0;
-        }
+	.galery-main {
+		color: $about;
+		.galery-content {
+			.galery-heading {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				font-size: 4em;
+				font-weight: bold;
+				font-family: $mont;
+				text-align: center;
+				margin: 180px 0 0;
+			}
 
-        .down, .up {
-            font-size: 1.8em;
-            margin: 0 10px;
-        }
+			.down,
+			.up {
+				font-size: 1.8em;
+				margin: 0 10px;
+			}
 
-        .text-heading {
-            text-align: center;
-            font-size: 2.5em;
-        }
-    }
+			.text-heading {
+				text-align: center;
+				font-size: 2.5em;
+			}
+		}
+	}
 }
-}
-
