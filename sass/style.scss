@@ -1,5 +1,6 @@
 @import './fonts';
 @import './colors';
+@import './animate';
 
 *,
 *::before,
@@ -26,6 +27,17 @@ body {
 	background-position: center;
 }
 
+.navbar {
+	.navbar-toggler {
+			padding: 10px;
+			color: #fff;
+
+			i {
+				font-size: 2.5em;
+			}
+	}
+}
+
 .section-heading {
 	color: #fff;
 	font-size: 4em;
@@ -39,7 +51,7 @@ body {
 @import './map';
 @import './footer';
 @import './about-page';
-@import './galery';
+@import './gallery';
 @import './contact';
 
 @media (min-width: 992px) {
@@ -84,13 +96,16 @@ body {
 }
 
 @media (max-width: 768px) {
+	footer {
+		font-size: 1.6em;
+	}
 	nav {
 		font-weight: bold;
-		font-size: 2em;
+		font-size: 2.5em;
 
 		.navbar-brand {
 			color: #fff;
-			font-size: 1.5em;
+			font-size: 1.2em;
 			margin-left: 15px;
 
 			i {
@@ -110,7 +125,7 @@ body {
 	}
 
 	header {
-		font-size: 2em;
+		font-size: 2.2em;
 
 		.hero-text {
 			position: absolute;
@@ -123,7 +138,7 @@ body {
 			.text {
 				padding: 100px 20px;
 				font-weight: bold;
-				font-size: 2em;
+				font-size: 2.2em;
 			}
 
 			p {
@@ -131,6 +146,7 @@ body {
 				width: 90%;
 				text-align: left;
 				font-family: $mont;
+				font-size: 1.3em;
 			}
 
 			.hero-span {
@@ -198,6 +214,34 @@ body {
 		}
 	}
 
+	.galery-main {
+		color: $about;
+		.galery-content {
+			.galery-heading {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				font-size: 4em;
+				font-weight: bold;
+				font-family: $mont;
+				text-align: center;
+				margin: 150px 0 0;
+			}
+	
+			.down, .up {
+				font-size: 1.8em;
+				margin: 0 10px;
+			}
+	
+			.text-heading {
+				margin-top: 50px;
+				text-align: center;
+				font-size: 2.5em;
+			}
+		}
+	}
+
 	.galery-section {
 		margin: 80px 0 20px;
 
@@ -205,7 +249,6 @@ body {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			// align-items: center;
 			margin: 80px 0;
 
 			img {
@@ -243,6 +286,55 @@ body {
 		background-size: cover;
 		background-attachment: fixed;
 	}
+
+	header {
+		font-size: 1.5em;
+	
+		.hero-text {
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+	
+			.text {
+				margin-left: 20px;
+				font-weight: bold;
+				font-size: 2em;
+				padding: 50px 0;
+			}
+	
+			p {
+				width: 100%;
+				text-align: left;
+				font-family: $mont;
+			}
+	
+			.hero-span {
+				position: relative;
+			}
+	
+			.hero-span::after {
+				content: '';
+				position: absolute;
+				bottom: -6px;
+				width: 100%;
+				height: 3px;
+				left: 0;
+				background: #fff;
+				transform-origin: right;
+				transform: scaleX(0);
+				transition: transform 0.5s;
+			}
+	
+			.hero-span:hover::after {
+				transform-origin: left;
+				transform: scaleX(1);
+			}
+		}
+	}
+	
 
 	.galery-section {
 		margin: 80px 0 20px;
@@ -290,7 +382,7 @@ body {
 				font-weight: bold;
 				font-family: $mont;
 				text-align: center;
-				margin: 180px 0 0;
+				margin: 100px 0 0;
 			}
 
 			.down,
@@ -300,8 +392,85 @@ body {
 			}
 
 			.text-heading {
+				margin-top: 50px;
 				text-align: center;
-				font-size: 2.5em;
+				font-size: 2em;
+			}
+		}
+	}
+
+
+	.section {
+		&__contact {
+			position: relative;
+			height: 100vh;
+			color: $about;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 100px 0 0;
+			
+			&--heading {			
+				font-size: 4em;
+				font-weight: bold;
+				margin-bottom: 50px;
+			}
+	
+			&--text {
+				font-size: 2.2em;
+	
+				.our-team {
+					text-decoration-line: underline;
+				}
+			}
+	
+			a {
+				color: $about;
+	
+				.fa-arrow-down {
+					position: absolute;
+					top: 65%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					font-size: 4em;
+				}
+			}
+		}
+
+		&__form {
+			margin-bottom: 100px;
+			form {
+				border: 2px solid $about;
+				border-radius: 10px;
+				padding: 50px 50px;
+				color: $about;
+				label,
+				input {
+					font-size: 2em;
+				}
+	
+				input {
+					margin: 10px 0;
+				}
+	
+				input::placeholder {
+					color: $about;
+				}
+	
+				label {
+					font-weight: bold;
+				}
+	
+				button {
+					border: none;
+					margin: 20px 0 5px;
+					font-size: 2em;
+					background-color: $about;
+				}
+				button:hover {
+					background-color: rgba(8, 49, 109, 0.9);
+				}
 			}
 		}
 	}

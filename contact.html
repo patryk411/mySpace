@@ -24,7 +24,7 @@
             <a class="navbar-brand" href="#"><i class="fas fa-user-astronaut"></i> MySpace</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -39,20 +39,23 @@
 
 
     <main class="main py-5">
-        <section class="section__contact py-5">
-            <h1 class="section__contact--heading py-5">We are very grateful that you came here
+        <section class="section__contact">
+            <h1 class="section__contact--heading py-5" data-aos="fade-up" data-aos-anchor-placement="ease-in-back"
+            data-aos-delay="350" data-aos-duration="1000">
+                We are very grateful that you came here
             </h1>
             <div class="container">
-                <p class="section__contact--text">
-                    Here you can contact our team and take advantage of our services
+                <p class="section__contact--text" data-aos="fade-up" data-aos-anchor-placement="ease-in-back"
+                data-aos-delay="700" data-aos-duration="1000">
+                    Now you can contact <span class="our-team">our team</span> and take advantage of our services
                 </p>
-                <i class="fa-solid fa-arrow-down"></i>
+                <a href="#form"><i class="fa-solid fa-arrow-down bounce-top"></i></a>
             </div>
         </section>
 
         <section class="section__form py-5">
             <div class="container">
-                <form class="row g-3">
+                <form class="row g-3" id="form">
                     <div class="col-md-6">
                         <label for="inputName" class="form-label">First Name</label>
                         <input type="name" class="form-control" id="inputName" placeholder="First name">
