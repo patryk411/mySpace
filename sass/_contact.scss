@@ -12,8 +12,8 @@ main {
 		flex-direction: column;
 		align-items: center;
 		margin: 200px 0 0;
-		
-		&--heading {			
+
+		&--heading {
 			font-size: 4.5em;
 			font-weight: bold;
 		}
@@ -33,7 +33,7 @@ main {
 				position: absolute;
 				top: 60%;
 				left: 50%;
-				transform: translate(-50%,-50%);
+				transform: translate(-50%, -50%);
 				font-size: 4em;
 			}
 		}
@@ -65,7 +65,7 @@ main {
 
 			button {
 				border: none;
-				margin: 20px 0 5px;
+				margin: 10px 0 5px;
 				font-size: 1.6em;
 				background-color: $about;
 			}
@@ -73,5 +73,12 @@ main {
 				background-color: rgba(8, 49, 109, 0.9);
 			}
 		}
+		.error {
+			color: red;
+			font-size: 2em;
+			text-align: center;
+			visibility: hidden;
+		}
 	}
 }
+

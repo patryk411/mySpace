@@ -29,12 +29,12 @@ body {
 
 .navbar {
 	.navbar-toggler {
-			padding: 10px;
-			color: #fff;
+		padding: 10px;
+		color: #fff;
 
-			i {
-				font-size: 2.5em;
-			}
+		i {
+			font-size: 2.5em;
+		}
 	}
 }
 
@@ -97,7 +97,7 @@ body {
 
 @media (max-width: 768px) {
 	footer {
-		font-size: 1.6em;
+		font-size: 1.2em;
 	}
 	nav {
 		font-weight: bold;
@@ -228,12 +228,13 @@ body {
 				text-align: center;
 				margin: 150px 0 0;
 			}
-	
-			.down, .up {
+
+			.down,
+			.up {
 				font-size: 1.8em;
 				margin: 0 10px;
 			}
-	
+
 			.text-heading {
 				margin-top: 50px;
 				text-align: center;
@@ -289,7 +290,7 @@ body {
 
 	header {
 		font-size: 1.5em;
-	
+
 		.hero-text {
 			position: absolute;
 			display: flex;
@@ -297,24 +298,24 @@ body {
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
-	
+
 			.text {
 				margin-left: 20px;
 				font-weight: bold;
 				font-size: 2em;
 				padding: 50px 0;
 			}
-	
+
 			p {
 				width: 100%;
 				text-align: left;
 				font-family: $mont;
 			}
-	
+
 			.hero-span {
 				position: relative;
 			}
-	
+
 			.hero-span::after {
 				content: '';
 				position: absolute;
@@ -327,14 +328,13 @@ body {
 				transform: scaleX(0);
 				transition: transform 0.5s;
 			}
-	
+
 			.hero-span:hover::after {
 				transform-origin: left;
 				transform: scaleX(1);
 			}
 		}
 	}
-	
 
 	.galery-section {
 		margin: 80px 0 20px;
@@ -399,7 +399,6 @@ body {
 		}
 	}
 
-
 	.section {
 		&__contact {
 			position: relative;
@@ -410,29 +409,29 @@ body {
 			flex-direction: column;
 			align-items: center;
 			margin: 100px 0 0;
-			
-			&--heading {			
+
+			&--heading {
 				font-size: 4em;
 				font-weight: bold;
 				margin-bottom: 50px;
 			}
-	
+
 			&--text {
 				font-size: 2.2em;
-	
+
 				.our-team {
 					text-decoration-line: underline;
 				}
 			}
-	
+
 			a {
 				color: $about;
-	
+
 				.fa-arrow-down {
 					position: absolute;
 					top: 65%;
 					left: 50%;
-					transform: translate(-50%,-50%);
+					transform: translate(-50%, -50%);
 					font-size: 4em;
 				}
 			}
@@ -449,19 +448,19 @@ body {
 				input {
 					font-size: 2em;
 				}
-	
+
 				input {
 					margin: 10px 0;
 				}
-	
+
 				input::placeholder {
 					color: $about;
 				}
-	
+
 				label {
 					font-weight: bold;
 				}
-	
+
 				button {
 					border: none;
 					margin: 20px 0 5px;
