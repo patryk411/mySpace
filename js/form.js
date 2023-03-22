@@ -1,4 +1,5 @@
 const name = document.querySelector('#inputName')
+const sendBox = document.querySelector('.send-box')
 const surrName = document.querySelector('#inputsurname')
 const mail = document.querySelector('#inputEmail4')
 const city = document.querySelector('#inputCity')
@@ -16,8 +17,9 @@ const checkForm = () => {
 		address.value !== '' &&
 		address2.value !== ''
 	) {
+		sendForm()
+		clear()
 		error.style.visibility = 'hidden'
-		clearInput()
 	} else if (
 		name.value == '' ||
 		surrName.value == '' ||
@@ -34,8 +36,12 @@ const showError = () => {
 	error.style.visibility = 'visible'
 }
 
-const clearInput = e => {
-	e.preventDefault()
+const sendForm = () => {
+	sendBox.classList.add('slide-bottom')
+	// sendBox.style.visibility = 'visible'
+}
+
+const clear = () => {
 	;[name, surrName, mail, city, address, address2].forEach(el => {
 		el.value = ''
 	})

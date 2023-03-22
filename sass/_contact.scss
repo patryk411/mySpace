@@ -40,6 +40,7 @@ main {
 	}
 
 	&__form {
+		position: relative;
 		margin-bottom: 100px;
 		form {
 			border: 2px solid $about;
@@ -79,6 +80,59 @@ main {
 			text-align: center;
 			visibility: hidden;
 		}
+		.send-box {
+			position: absolute;
+			top: 5%;
+			left: 38%;
+			transform: translate(-50%, -50%);
+			width: 450px;
+			height: 250px;
+			background-color: $about;
+			color: white;
+			border-radius: 5px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			visibility: hidden;
+
+			.send-title {
+				font-size: 3em;
+			}
+
+			.send-text {
+				font-size: 1.6em;
+			}
+		}
+
+		.slide-bottom {
+			animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+		}
+
+		// .push-up-anim {
+		// 	visibility: hidden;
+		// 	animation: push-up 2s 1s infinite;
+		// }
 	}
 }
 
+// @keyframes push-up {
+// 	from {
+// 		// top: 0;
+// 		visibility: hidden;
+// 	}
+// 	to {
+// 		visibility: visible;
+// 	}
+// }
+
+@keyframes slide-bottom {
+	0% {
+		transform: translateY(0);
+		visibility: hidden;
+	}
+	100% {
+		transform: translateY(100px);
+		visibility: visible;
+	}
+}
