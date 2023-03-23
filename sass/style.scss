@@ -277,6 +277,83 @@ body {
 			margin: 80px 0;
 		}
 	}
+
+	.section {
+		&__contact {
+			a {
+				color: $about;
+
+				.fa-arrow-down {
+					position: absolute;
+					top: 55%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-size: 5em;
+				}
+			}
+		}
+
+		&__form {
+			margin-bottom: 80px;
+			form {
+				border: 2px solid $about;
+				border-radius: 10px;
+				padding: 40px 40px;
+				color: $about;
+				label,
+				input {
+					font-size: 2.5em;
+				}
+
+				input {
+					margin: 20px 0;
+				}
+
+				input::placeholder {
+					color: $about;
+				}
+
+				label {
+					font-weight: bold;
+				}
+
+				button {
+					border: none;
+					margin: 20px 0 5px;
+					font-size: 2.5em;
+					background-color: $about;
+				}
+				button:hover {
+					background-color: rgba(8, 49, 109, 0.9);
+				}
+			}
+
+			.send-box {
+				position: absolute;
+				top: 15%;
+				left: 20%;
+				transform: translate(-50%, -50%);
+				width: 450px;
+				height: 200px;
+				background-color: $about;
+				color: white;
+				border-radius: 5px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				visibility: hidden;
+
+				.send-title {
+					font-size: 3em;
+				}
+
+				.send-text {
+					font-size: 1.6em;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 390px) {
@@ -303,7 +380,7 @@ body {
 				margin-left: 20px;
 				font-weight: bold;
 				font-size: 2em;
-				padding: 50px 0;
+				padding: 120px 0 50px;
 			}
 
 			p {
@@ -411,9 +488,9 @@ body {
 			margin: 100px 0 0;
 
 			&--heading {
-				font-size: 4em;
+				font-size: 3.4em;
 				font-weight: bold;
-				margin-bottom: 50px;
+				margin-bottom: 20px;
 			}
 
 			&--text {
@@ -429,7 +506,7 @@ body {
 
 				.fa-arrow-down {
 					position: absolute;
-					top: 65%;
+					top: 60%;
 					left: 50%;
 					transform: translate(-50%, -50%);
 					font-size: 4em;
@@ -438,11 +515,11 @@ body {
 		}
 
 		&__form {
-			margin-bottom: 100px;
+			margin-bottom: 80px;
 			form {
 				border: 2px solid $about;
 				border-radius: 10px;
-				padding: 50px 50px;
+				padding: 30px 30px;
 				color: $about;
 				label,
 				input {
@@ -470,6 +547,44 @@ body {
 				button:hover {
 					background-color: rgba(8, 49, 109, 0.9);
 				}
+			}
+
+			.send-box {
+				position: absolute;
+				top: 15%;
+				left: 10%;
+				transform: translate(-50%, -50%);
+				width: 320px;
+				height: 200px;
+				background-color: $about;
+				color: white;
+				border-radius: 5px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				visibility: hidden;
+
+				.send-title {
+					font-size: 3em;
+				}
+
+				.send-text {
+					font-size: 1.6em;
+				}
+			}
+		}
+		.slide-bottom {
+			animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+		}
+		@keyframes slide-bottom {
+			0% {
+				transform: translateY(-50px);
+				visibility: hidden;
+			}
+			100% {
+				transform: translateY(100px);
+				visibility: visible;
 			}
 		}
 	}
