@@ -21,6 +21,7 @@ body {
 }
 
 .hero-img {
+	position: relative;
 	height: 100vh;
 	background-image: url('/img/ziemia1920.jpg');
 	background-size: cover;
@@ -54,10 +55,13 @@ body {
 @import './gallery';
 @import './contact';
 
+.nav-color {
+	background-color: rgba(8, 49, 109, 0.6);
+}
+
 @media (min-width: 992px) {
 	.map-img {
 		height: 100vh;
-		background-image: url('/img/niebowe1920.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -67,7 +71,6 @@ body {
 @media (max-width: 992px) {
 	.map-img {
 		height: 160vh;
-		background-image: url('/img/niebowe1920.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -90,6 +93,85 @@ body {
 				background-size: cover;
 				width: 400px;
 				padding: 0 20px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.section {
+		&__contact {
+			a {
+				color: $about;
+
+				.fa-arrow-down {
+					position: absolute;
+					top: 55%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-size: 5em;
+				}
+			}
+		}
+
+		&__form {
+			margin-bottom: 80px;
+			form {
+				border: 2px solid $about;
+				border-radius: 10px;
+				padding: 40px 40px;
+				color: $about;
+				label,
+				input {
+					font-size: 2.2em;
+				}
+
+				input {
+					margin: 20px 0;
+				}
+
+				input::placeholder {
+					color: $about;
+				}
+
+				label {
+					font-weight: bold;
+				}
+
+				button {
+					border: none;
+					margin: 20px 0 5px;
+					font-size: 2em;
+					background-color: $about;
+				}
+				button:hover {
+					background-color: rgba(8, 49, 109, 0.9);
+				}
+			}
+
+			.send-box {
+				position: absolute;
+				top: 15%;
+				left: 20%;
+				transform: translate(-50%, -50%);
+				width: 450px;
+				height: 200px;
+				background-color: $about;
+				color: white;
+				border-radius: 5px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				visibility: hidden;
+
+				.send-title {
+					font-size: 3em;
+				}
+
+				.send-text {
+					font-size: 1.6em;
+				}
 			}
 		}
 	}
@@ -302,7 +384,7 @@ body {
 				color: $about;
 				label,
 				input {
-					font-size: 2.5em;
+					font-size: 2em;
 				}
 
 				input {
@@ -356,10 +438,15 @@ body {
 	}
 }
 
+@media (max-width: 576px) {
+	.map-img {
+		background-image: url('/img/niebowe640.jpg');
+	}
+}
+
 @media (max-width: 390px) {
 	.map-img {
 		height: 100%;
-		background-image: url('/img/niebowe1920.jpg');
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -459,7 +546,7 @@ body {
 				font-weight: bold;
 				font-family: $mont;
 				text-align: center;
-				margin: 100px 0 0;
+				margin: 80px 0 0;
 			}
 
 			.down,
@@ -469,7 +556,7 @@ body {
 			}
 
 			.text-heading {
-				margin-top: 50px;
+				margin-top: 30px;
 				text-align: center;
 				font-size: 2em;
 			}
