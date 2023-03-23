@@ -440,7 +440,7 @@ body {
 
 @media (max-width: 576px) {
 	.map-img {
-		background-image: url('/img/niebowe640.jpg');
+		background-image: url('/img/niebowe1920.jpg');
 	}
 }
 
@@ -471,7 +471,7 @@ body {
 			}
 
 			p {
-				width: 100%;
+				width: 125%;
 				text-align: left;
 				font-family: $mont;
 			}
@@ -593,7 +593,7 @@ body {
 
 				.fa-arrow-down {
 					position: absolute;
-					top: 60%;
+					top: 55%;
 					left: 50%;
 					transform: translate(-50%, -50%);
 					font-size: 4em;
